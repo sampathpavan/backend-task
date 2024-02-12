@@ -11,12 +11,16 @@ institute information.
 2.) Spring Boot
 
 3.) Mysql Database
+
 4.) JUnit and Mockito
 
 ## Requirements
 1.)IDE
+
 2.)JDK
+
 3.)Database
+
 4.)Postman
 
 # Approach
@@ -26,7 +30,7 @@ Repository Layer, Service Layer and Controller Layer.
 When client or end user hits the endpoint then the request comes to controller and controller is talking to service and then service is talking to repository layer.
 Finally repository layer talks to database and fetches data from database.
 
-## End user -------------> controller -----------> service----------> repository------------>database
+## End user --------> controller ---------> service----------> repository---------->database
 
 ## Endpoints used in the project :
 1.) For Institute Registration 
@@ -50,10 +54,15 @@ Finally repository layer talks to database and fetches data from database.
 }
 # Workflow
 -> Create different packages which includes Entity, Repository, Service, Controller, Validation.
+
 -> Create an Entity class with required fields and provide getters and setters as this is required to create a table in db (create a schema in db initially).
+
 -> Create a Repository interface which extends Jpa Repository which is useful in talking to db which has various methods to perform CRUD operations.
+
 -> Create a Service Interface in which we define all our methods to implement and next we create a class which implements the interface in which we write all the business logic
+
 -> Create a Controller class where we define all our endpoints.
+
 -> Create a Validation class to customize the validation response.
 
 # Testing the application
